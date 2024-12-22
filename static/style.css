@@ -1,0 +1,295 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and common styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #eef2f3; 
+    color: #2c3e50;
+    padding: 20px;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(120deg, #3a6073, #16222a);
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    color: #f0f0f0;
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation styles */
+nav {
+    margin-top: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+    padding: 12px 18px;
+    background: linear-gradient(90deg, #2c3e50, #34495e);
+    border-radius: 8px;
+    transition: background 0.3s, transform 0.3s;
+    margin: 0 10px;
+}
+
+nav a:hover, form input[type="submit"]:hover, .btn:hover {
+    filter: brightness(1.2); /* Tăng độ sáng */
+    transform: translateY(-2px); /* Dịch chuyển nhẹ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tạo bóng nổi bật */
+}
+
+/* Specific nav styles for different pages */
+.nav-home a {
+    background: linear-gradient(90deg, #4caf50, #6fcf97);
+}
+
+.nav-home a:hover {
+    background: linear-gradient(90deg, #45a049, #4CAF50);
+}
+
+.nav-students a {
+    background: linear-gradient(90deg, #2196F3, #0b7dda);
+}
+
+.nav-students a:hover {
+    background: linear-gradient(90deg, #0b7dda, #2196F3);
+}
+
+.nav-login a {
+    background: linear-gradient(90deg, #e74c3c, #f3726d);
+}
+
+.nav-login a:hover {
+    background: linear-gradient(90deg, #da190b, #f44336);
+}
+
+.nav-register a {
+    background: linear-gradient(90deg, #ff9800, #e68a00);
+}
+
+.nav-register a:hover {
+    background: linear-gradient(90deg, #e68a00, #ff9800);
+}
+
+/* Showcase styles */
+#showcase {
+    min-height: 400px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+#showcase h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#showcase p {
+    font-size: 22px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.p-register {
+    text-align: center;
+    margin-top: 20px;
+}
+/* Main content styles */
+main {
+    margin-top: 40px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #34495e;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+main p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    max-width: 550px;
+    margin: 20px auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"],
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+form input[type="submit"] {
+    background: linear-gradient(90deg, #2c3e50, #34495e);
+    color: #fff;
+    border: 0;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background 0.3s, transform 0.3s;
+    font-size: 18px;
+}
+
+form input[type="submit"]:hover {
+    background: linear-gradient(90deg, #34495e, #2c3e50);
+    transform: scale(1.05);
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    text-align: center; /* Căn giữa nội dung trong bảng */
+}
+
+th, td {
+    padding: 12px;
+    font-size: 16px;
+}
+
+th {
+    background: linear-gradient(90deg, #2c3e50, #34495e);
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background: #f4f4f4;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+/* Button chung */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.btn:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.btn-add {
+    background: linear-gradient(90deg, #6ccf81, #38a169);
+}
+
+.btn-add:hover {
+    background: linear-gradient(90deg, #38a169, #6ccf81); 
+    transform: scale(1.05);
+}
+
+.btn-edit {
+    background: linear-gradient(90deg, #5b9bd5, #2179b8);
+}
+
+.btn-edit:hover {
+    background: linear-gradient(90deg, #2179b8, #5b9bd5);
+    transform: scale(1.05);
+}
+
+.btn-delete {
+    background: linear-gradient(90deg, #e57373, #d32f2f);
+}
+
+.btn-delete:hover {
+    background: linear-gradient(90deg, #d32f2f, #e57373);
+    transform: scale(1.05);
+}
+
+.btn-login, .btn-register {
+    font-size: 18px;
+    padding: 14px 28px;
+    background: linear-gradient(45deg, #42a5f5, #64b5f6);
+    color: #fff;
+    margin-left: 35%;
+}
+
+.btn-login:hover, .btn-register:hover {
+    background: linear-gradient(45deg, #64b5f6, #42a5f5);
+    transform: scale(1.05);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+}
+
+/* Footer styles */
+footer {
+    background: linear-gradient(90deg, #2c3e50, #34495e);
+    color: #f0f0f0;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header, form, footer {
+    animation: fadeIn 1s ease-in-out;
+}
