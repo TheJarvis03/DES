@@ -301,7 +301,3 @@ footer {
         transform: translateY(0);
     }
 }
-
-header, form, footer {
-    animation: fadeIn 1s ease-in-out;
-}
