@@ -4,14 +4,21 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 /* Body and common styling */
 body {
     font-family: 'Arial', sans-serif;
+    width: 100%;
     line-height: 1.6;
     background-color: #eef2f3; 
     color: #2c3e50;
     padding: 20px;
+    margin: 0;
+    flex-grow: 1;
 }
 
 /* Header styles */
@@ -140,7 +147,7 @@ form {
     padding: 25px;
     border-radius: 8px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-    max-width: 550px;
+    width: 47%;
     margin: 20px auto;
 }
 
@@ -149,6 +156,7 @@ form label {
     margin-bottom: 8px;
     font-weight: bold;
     color: #333;
+    width: 100%;
 }
 
 form input[type="text"],
@@ -162,6 +170,7 @@ form select {
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 form input[type="submit"] {
@@ -227,6 +236,8 @@ tr:hover {
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 .btn-add {
+    font-size: 14px; /* Giảm kích thước chữ */
+    margin: 10px auto; /* Căn giữa nút */
     background: linear-gradient(90deg, #6ccf81, #38a169);
 }
 
@@ -277,6 +288,7 @@ footer {
     margin-top: 20px;
     border-radius: 8px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    margin-top: auto;
 }
 
 @keyframes fadeIn {
